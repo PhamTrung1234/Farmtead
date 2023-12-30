@@ -25,45 +25,71 @@ body h1,body h2,body h3,body h4{
 .transision{
     transition: all 0.5s;
 }
-
-
-
-
-
+.title h4{
+    font-size: 22px;
+    color: #fb811e;
+}
+.title h2{
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #060606;
+}
+.title p{
+    line-height: 26px;
+    color: #707070;
+    margin-bottom: 1.5rem;
+}
+.btn__color a{
+   font-size: 16px;
+   line-height: 26px;
+   padding: 12px 30px;
+   font-weight: 600;
+   background: #fb811e;
+   color: #fff;
+   border-radius: 30px;
+   text-decoration: none;
+   margin-bottom: 1.5rem;
+   display: inline-block; 
+}
+.btn__color:hover a{
+    background: #009f4d;
+}
 
 /* HEADER  */
-header{
-    position: relative;
+  
+
+
+
+
+
+/* Naturally  */
+.Naturally{
+    padding: 3rem 0 !important;
+}
+.nat__right{
+    text-align: center;
+    gap: 20px 0;
+}
+.nat__right img{
+    max-width: 65px;
+    display: block;
+    margin: 0 auto;
+}
+.nat__right h4{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #060606;
+}
+.nat__item{
+    padding: 40px 30px;
+    border-radius: 30px;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
     background-color: #fff;
 }
-header h1{
-    font-size: 32px;
-    position: relative;
-    color: #fb811e;
-    
-}
-header h1 i{
-    font-size: 20px;
-    position: absolute;
-    top: -10px;
-    left: 55px;
-}
-header h1:hover{
-    color: #060606;
-}
-.header__form form{
-    padding-right: 30px;
-}
-#navbarSupportedContent .navbar-nav .nav-item .nav-link{
-    font-size: 16px;
-    color: #060606;
-}
-#navbarSupportedContent .navbar-nav{
-    width: 128px;
-    max-width: 8em;
-    background-color: red;
-    max-height: 400px;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
+.nat__item:hover{
+    transition: 0.3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
