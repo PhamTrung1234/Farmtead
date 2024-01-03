@@ -19,7 +19,7 @@ html ,body{
     font-size: 16px;
     
 }
-body h1,body h2,body h3,body h4{
+body h1,body h2,body h3,body h4,body h5{
     font-family: 'volkhov', sans-serif;
 }
 .transision{
@@ -314,3 +314,67 @@ body h1,body h2,body h3,body h4{
 .contact__item2:hover{
     border: 1px solid #eee;  
 }
+.contact__content3{
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    object-fit: cover;
+}
+.contact__item3{
+    position: relative;
+    overflow: hidden;
+}
+.contact__item3 img{
+    max-width: 100%;
+    cursor: pointer;
+}
+@media screen and (max-width:991px) {
+    .contact__content3{
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        object-fit: cover;
+    }
+    .contact__item3 img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+    .contact__item4{
+        grid-column: 1 / span 2;
+    }
+}
+.contact--box{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 20px;
+    text-align: center;
+    padding: 6px;
+    background: rgb(255 255 255 / 27%);
+    
+}
+.contact--box h5{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.contact__item3::before {
+    content: "";
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -75%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skew(-17deg);
+    /* transition:all 0.5s ease-in-out ; */
+  }
+  .contact__item3:hover::before{
+      left: 125%;
+      transition: 0.5s ease-in-out;
+  }
