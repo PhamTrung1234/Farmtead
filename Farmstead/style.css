@@ -14,7 +14,7 @@
 }
 html ,body{
     font-family: 'Source Sans Pro', sans-serif;
-    color: #404040;
+    color: #707070;
     line-height: 1.4;
     font-size: 16px;
     
@@ -83,14 +83,79 @@ body h1,body h2,body h3,body h4,body h5{
 
 /* HEADER  */
   
-
-
-
-
-
+/* farmcarousel  */
+.farmcarousel{
+    position: relative;
+}
+.farmcarousel__content .carousel-caption{
+    right: 3%;
+    text-align: end;
+}
+.farmcarousel__content .carousel-indicators li{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    opacity: 1;
+}
+.farmcarousel__content .carousel-indicators .active{
+   background: #fb811e;  
+}
+.farmcarousel__left{
+    position: absolute;
+    z-index: 10;
+    left: 10em;
+}
+.farmcarousel__item{
+    position: relative;
+}
+.farmcarousel__left h3{
+    position: absolute;
+    font-size: 100px;
+    color: #f4f4f4;
+    font-weight: bold;
+    left: -0.5em;
+    z-index: 0;
+    top: -1em;
+}
+@media screen and (max-width:1150px) {
+    .farmcarousel__left h3{
+        font-size: 90px;
+    }
+}
+@media screen and (max-width:991px) {
+    .farmcarousel__left h3{
+        font-size: 80px;
+    }
+    .farmcarousel__left{
+        left: 2em;
+    }
+}
+@media screen and (max-width:768px) {
+    .farmcarousel__left{
+        
+        left: 0em;
+        padding: 2em;
+       
+    }
+    .farmcarousel__left h3{
+        left: 0;
+        top: -0.3em;
+    }
+    .farmcarousel__item{
+        background: #fff;
+        padding: 3em 2em 2em 4em;
+        
+    }
+}
+@media screen and (max-width:568px) {
+    .farmcarousel__left h3{
+        font-size: 70px;
+    }
+}
 /* Naturally  */
 .Naturally{
-    padding: 3rem 0 !important;
+    padding: 6rem 0 !important;
 }
 .nat__right{
     text-align: center;
@@ -193,7 +258,6 @@ body h1,body h2,body h3,body h4,body h5{
 .food__item--bottom p:last-of-type{
     font-size: 17px;
     line-height: 27px;
-    color: #070707;
 }
 .food__bottom .row{
     gap: 1.5rem 0;
@@ -228,6 +292,7 @@ body h1,body h2,body h3,body h4,body h5{
     font-size: 24px;
     font-weight: 600;
     margin-top: 5px;
+    color:#060606;
 }
 
 .contatc__right{
@@ -462,4 +527,111 @@ body h1,body h2,body h3,body h4,body h5{
     .banner__right {
         text-align: center;
     }
+}
+
+
+/* Footer  */
+footer{
+    padding: 3rem 0;
+}
+.footer__content h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #060606;
+}
+.footer__hover{
+    color: #707070;
+    transition: all 0.5s ease-in-out;
+    
+}
+.footer__hover:hover{
+    color: #fb811e;
+    text-decoration: none;
+}
+.logo {
+    color: #fb811e;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    display: inline-block;
+}
+.logo h2{
+    font-size: 32px;
+}
+.logo i{
+    font-size: 20px;
+    position: absolute;
+    top: 3px;
+    left: 35%;
+}
+.logo:hover{
+    color: #060606;
+    text-decoration: none;
+}
+.footer__hover1{
+    color: #009f4d;
+    transition: 0.5s ease-in;
+}
+.footer__hover1:hover{
+    color: #fb811e;
+    text-decoration: none;
+}
+.footer__icon li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer__icon i{
+    font-size: 15px;
+    line-height: 35px;
+    color: #009f4d; 
+    transition: 0.5s ease-in-out;
+}
+.footer__icon a{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    text-align: center; 
+    transition: 0.5s ease-in-out;
+}
+.footer__icon a:hover{
+    background-color: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
+.footer__icon a:hover i{
+    color: #fb811e;
+}
+@media (min-width: 576px){
+.footer__form .form-inline .form--footer {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+}
+.footer__form .btn--footer{
+    width: 20%;
+    background-color: #009f4d;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 0 30px 30px 0;
+    transition: 0.5s ease-in-out;
+}
+
+.footer__form .btn--footer:hover{
+    opacity: 0.8;
+}
+.footer__form .form--footer{
+    background: #f4f4f4;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    color: #707070;
+    border-radius: 30px 0 0 30px;
+    height: 100%;
+    border:1px solid #eee;
 }
