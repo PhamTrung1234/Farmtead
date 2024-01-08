@@ -82,7 +82,96 @@ body h1,body h2,body h3,body h4,body h5{
 }
 
 /* HEADER  */
-  
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    height: 90px;
+}
+.header__form{
+    display: flex;
+    align-items: center;
+}
+ .header__form .header__item1 input{
+        background: #fff url(../img/search.png) no-repeat 10px center;
+        border: 1px solid #eee;
+        padding: 0 10px;
+        width: 35px;
+        height: 35px;
+        border-radius: 10em;
+        cursor: pointer;
+        transition: 0.5s;
+        outline: none;
+ }
+ .header__form .header__item1 input:focus{
+        width: 200px;
+        padding-left: 32px;
+        color: #000;
+        padding-right: 15px;
+        cursor: auto;
+        background-color: #fff;
+        
+ }
+
+.header__end{
+    position: relative;
+    font-size: 29px;
+}
+.header__end i{
+    font-size: 1em;
+}
+.header__end button{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1em;
+}
+.header__nav{
+    position: absolute;
+    top: 120%;
+    right: 0;
+    min-width: 8em;
+    z-index: 3;
+    transition: all 0.5s ease-in;
+}
+#navbarSupportedContent .navbar-nav{
+    overflow: hidden;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    
+}
+#navbarSupportedContent .nav-item .nav-link{
+    color: #060606;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+#navbarSupportedContent .active .nav-link{
+    color: #fb811e;
+}
+.header__end button{
+    color: white;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+    
+  }
+.cd-top--is-visible .navbar-brand{
+    color: #060606;
+}
+.cd-top--is-visible  .header__end i{
+    color: #060606;
+}
 /* farmcarousel  */
 .farmcarousel{
     position: relative;
@@ -152,6 +241,9 @@ body h1,body h2,body h3,body h4,body h5{
     .farmcarousel__left h3{
         font-size: 70px;
     }
+}
+.farmcarousel__right{
+    height: 100vh;
 }
 /* Naturally  */
 .Naturally{
