@@ -16,7 +16,7 @@ html ,body{
     font-family: 'Source Sans Pro', sans-serif;
     color: #707070;
     line-height: 1.4;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 body h1,body h2,body h3,body h4,body h5{
@@ -87,12 +87,23 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 11;
+    z-index: 20;
     height: 90px;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    
+}
+header .header__content{
+   margin: 0 -15px;
 }
 .header__form{
     display: flex;
     align-items: center;
+}
+.header__content .logo i{
+    top: 10px;
+    left: 55px;
 }
  .header__form .header__item1 input{
         background: #fff url(../img/search.png) no-repeat 10px center;
@@ -151,6 +162,10 @@ header{
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+    transition: 0.5s;
+}
+#navbarSupportedContent .nav-item .nav-link:hover{
+    color: #fb811e;
 }
 #navbarSupportedContent .active .nav-link{
     color: #fb811e;
@@ -164,7 +179,9 @@ header{
     opacity: 1;
     background: #fff;
     transition: all 0.5s ease-in-out;
-    
+    height: 70px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+
   }
 .cd-top--is-visible .navbar-brand{
     color: #060606;
@@ -172,9 +189,38 @@ header{
 .cd-top--is-visible  .header__end i{
     color: #060606;
 }
+@media screen and (max-width:768px) {
+    .header__content .navbar-brand, .header__item2 i, .header__end i{
+        color: #fff;
+    }
+    .cd-top--is-visible .navbar-brand{
+        color: #fb811e;
+    }
+}
+.header__item2{
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    line-height: 24px;
+}
+.header__item2:hover {
+    color: #fb811e;
+}
+.header__item2 span:first-of-type{
+    display: none;
+}
+.cd-top--is-visible .header__item2{
+    color: #060606;
+}
 /* farmcarousel  */
 .farmcarousel{
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 .farmcarousel__content .carousel-caption{
     right: 3%;
@@ -199,13 +245,13 @@ header{
     position: relative;
 }
 .farmcarousel__left h3{
-    position: absolute;
+    line-height: 28px;
     font-size: 100px;
     color: #f4f4f4;
     font-weight: bold;
-    left: -0.5em;
+    margin-left: -0.5em;
     z-index: 0;
-    top: -1em;
+    
 }
 @media screen and (max-width:1150px) {
     .farmcarousel__left h3{
@@ -242,8 +288,11 @@ header{
         font-size: 70px;
     }
 }
-.farmcarousel__right{
+#carouselExampleCaptions .carousel-inner .carousel-item>img{
     height: 100vh;
+    object-fit: cover;
+    border-radius: 0 0 0 20px;
+    
 }
 /* Naturally  */
 .Naturally{
@@ -428,6 +477,11 @@ header{
     box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
     text-align: center;
     padding: 40px;
+}
+@media screen and (max-width:768px) {
+    .contact__box{
+        left: -50px;
+    }
 }
 .contact__content2{
     padding-top: 6rem ;
@@ -719,11 +773,115 @@ footer{
 }
 .footer__form .form--footer{
     background: #f4f4f4;
-    padding: 12px 20px;
+    padding: 13px 20px;
     font-size: 16px;
     outline: none;
     color: #707070;
     border-radius: 30px 0 0 30px;
     height: 100%;
     border:1px solid #eee;
+}
+/* back to top  */
+.backtotop{
+   font-size: 16px;
+   text-align: center;
+   line-height: 40px;
+   width: 40px;
+   height: 40px;
+   color: #fff;
+   background: #009f4d;
+   display: inline-block;
+   position: fixed;
+   bottom: 90px;
+   right: 15px;
+   border: none;
+   outline: none;
+   z-index: 20;
+   opacity: 0;
+   border-radius: 4px;
+}
+.backtotop:hover{
+    opacity: 0.8;
+    color: #fff;
+}
+.cd-top--is-visible1{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* BODY .dark  */
+body.dark header.cd-top--is-visible{
+    background-color: #222222;
+}
+body.dark header.cd-top--is-visible .navbar-brand ,body.dark header.cd-top--is-visible .header__end i,body.dark header.cd-top--is-visible .header__form i{
+    color: #fff;
+}
+body.dark .farmcarousel h3{
+    color: #0b0d0e;
+}
+body.dark .title h2{
+    color: #fff;
+}
+body.dark .title p{
+    color: #b7b7b7;
+}
+body.dark .farmcarousel{
+    background-color: #222222;
+}
+body.dark .Naturally{
+    background-color: #222222;
+}
+body.dark .Naturally .nat__item h4{
+    color: #fff;
+}
+body.dark .Naturally .nat__item {
+    box-shadow: 0 1rem 3rem rgb(23 19 19);
+    background-color: #222222;
+}
+body.dark .Naturally .nat__item:hover{
+    transition: .3s;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+body.dark .food .food__item--bottom{
+    background: #222222;
+    color:#b7b7b7;
+}
+body.dark .food .food__item--bottom a{
+    color: #fff;
+}
+body.dark .food .food__item--bottom a:hover{
+    color: #009f4d;
+}
+body.dark .contact {
+    background-color: #222222;
+    
+}
+body.dark .contact p{
+    color: #b7b7b7;
+}
+body.dark .contact__text h3,body.dark .contact__item2 h3{
+    color: #fff;
+}
+body.dark .contact__box p{
+    color: #fff;
+}
+body.dark .contact__item2:hover{
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+body.dark .contact__item2:hover h3{
+    color: #009f4d;
+}
+body.dark footer{
+    background-color: #222222;
+    color: #b7b7b7;
+}
+body.dark footer h3{
+    color: #fff;
+}
+body.dark footer .footer__item a{
+    color: #b7b7b7;
+}
+body.dark .footer__form input{
+    background: #0b0d0e;
+    border: 1px solid rgba(255, 255, 255, .2);
 }
