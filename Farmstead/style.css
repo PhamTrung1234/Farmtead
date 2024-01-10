@@ -177,6 +177,10 @@ header .header__content{
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     line-height: 24px;
+    
+}
+#swtich-mode::before{
+    font-weight: 600 !important;
 }
 .header__item2:hover {
     color: #fb811e;
