@@ -16,7 +16,7 @@ html ,body{
     font-family: 'Source Sans Pro', sans-serif;
     color: #707070;
     line-height: 1.4;
-    font-size: 1rem;
+    font-size: 16px;
     
 }
 body h1,body h2,body h3,body h4,body h5{
@@ -40,31 +40,9 @@ body h1,body h2,body h3,body h4,body h5{
     color: #707070;
     margin-bottom: 1.5rem;
 }
-@media screen and (max-width:991px) {
-    .title h2{
-        line-height: 45px;
-        font-size: 35px;   
-    }
-    .title h4{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width:768px) {
-    .title h2{
-        font-size: 32px !important;
-        line-height: 42px !important;
-    }
-    .title h4{
-        font-size: 18px !important;
-    }
-}
-@media screen and (max-width:568px) {
-    .title h2{
-        font-size: 30px !important;
-        line-height: 40px !important;
-    }
-    
-}
+
+
+
 .btn__color a{
    font-size: 16px;
    line-height: 26px;
@@ -189,20 +167,13 @@ header .header__content{
 .cd-top--is-visible  .header__end i{
     color: #060606;
 }
-@media screen and (max-width:768px) {
-    .header__content .navbar-brand, .header__item2 i, .header__end i{
-        color: #fff;
-    }
-    .cd-top--is-visible .navbar-brand{
-        color: #fb811e;
-    }
-}
+
 .header__item2{
     color: #fff;
     width: 24px;
     height: 24px;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     line-height: 24px;
@@ -253,41 +224,10 @@ header .header__content{
     z-index: 0;
     
 }
-@media screen and (max-width:1150px) {
-    .farmcarousel__left h3{
-        font-size: 90px;
-    }
-}
-@media screen and (max-width:991px) {
-    .farmcarousel__left h3{
-        font-size: 80px;
-    }
-    .farmcarousel__left{
-        left: 2em;
-    }
-}
-@media screen and (max-width:768px) {
-    .farmcarousel__left{
-        
-        left: 0em;
-        padding: 2em;
-       
-    }
-    .farmcarousel__left h3{
-        left: 0;
-        top: -0.3em;
-    }
-    .farmcarousel__item{
-        background: #fff;
-        padding: 3em 2em 2em 4em;
-        
-    }
-}
-@media screen and (max-width:568px) {
-    .farmcarousel__left h3{
-        font-size: 70px;
-    }
-}
+
+
+
+
 #carouselExampleCaptions .carousel-inner .carousel-item>img{
     height: 100vh;
     object-fit: cover;
@@ -352,13 +292,7 @@ header .header__content{
     padding-bottom: 1.5rem;
     margin-bottom: 3rem;
 }
-@media screen and (max-width:576px) {
-    .food .title{
-        padding-bottom: 1.5rem;
-        margin-bottom: 0rem;
-    }
-    
-}
+
 
 
 
@@ -404,17 +338,8 @@ header .header__content{
     gap: 1.5rem 0;
 }
 
-@media screen and (max-width:991px){
-    .food__bottom .row .food__flex{
-     margin-left: 25%;
-    }
- }
- @media screen and (max-width:767px){
-     .food__bottom .row .food__flex{
-      margin-left: 0;
-     }
-    
-  }
+
+ 
 
 
 
@@ -440,13 +365,7 @@ header .header__content{
     
     position: relative;
 }
-@media (min-width: 992px){
-    .contact__flex .col-lg-6:last-of-type{
-    
-    flex: 0 0 41.66667%;
-    margin-left: 8.33333%;
-}
-}
+
 
 .contatc__right img{
     max-width: 100%;
@@ -478,11 +397,8 @@ header .header__content{
     text-align: center;
     padding: 40px;
 }
-@media screen and (max-width:768px) {
-    .contact__box{
-        left: -50px;
-    }
-}
+  
+
 .contact__content2{
     padding-top: 6rem ;
 }
@@ -539,22 +455,8 @@ header .header__content{
     max-width: 100%;
     cursor: pointer;
 }
-@media screen and (max-width:991px) {
-    .contact__content3{
-        padding-top: 3rem;
-        display: grid;
-        grid-template-columns: repeat(2 ,1fr);
-        object-fit: cover;
-    }
-    .contact__item3 img{
-        width: 100%;
-    }
-}
-@media screen and (max-width:450px){
-    .contact__item4{
-        grid-column: 1 / span 2;
-    }
-}
+
+
 .contact--box{
     position: absolute;
     z-index: 0;
@@ -619,16 +521,7 @@ header .header__content{
     z-index: 0;
     color:#fff;
   }
-  @media screen and (max-width:992px) {
-    .banner__item{
-        margin: 0;
-        padding: 1.5rem 0;
-    }
-    .banner__content{
-        padding-bottom: 1.5rem;
-        
-      }
-  }
+
  .banner .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #fb811e;
 }
@@ -669,11 +562,7 @@ header .header__content{
     color: #fb811e;
     font-weight: 600;
 }
-@media screen and (max-width:768px) {
-    .banner__right {
-        text-align: center;
-    }
-}
+
 
 
 /* Footer  */
@@ -750,13 +639,7 @@ footer{
 .footer__icon a:hover i{
     color: #fb811e;
 }
-@media (min-width: 576px){
-.footer__form .form-inline .form--footer {
-    display: inline-block;
-    width: 80%;
-    vertical-align: middle;
-}
-}
+
 .footer__form .btn--footer{
     width: 20%;
     background-color: #009f4d;
@@ -885,3 +768,138 @@ body.dark .footer__form input{
     background: #0b0d0e;
     border: 1px solid rgba(255, 255, 255, .2);
 }
+
+
+
+/* Responsive  */
+
+
+@media screen and (max-width:1150px) {
+    .farmcarousel__left h3{
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .title h2{
+        line-height: 45px;
+        font-size: 35px;   
+    }
+    .title h4{
+        font-size: 20px;
+    }
+    .banner__item{
+        margin: 0;
+        padding: 1.5rem 0;
+    }
+    .banner__content{
+        padding-bottom: 1.5rem;
+        
+      }
+      .contact__content3{
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        object-fit: cover;
+    }
+    .contact__item3 img{
+        width: 100%;
+    }
+    
+    .food__bottom .row .food__flex{
+        margin-left: 25%;
+       }
+       .farmcarousel__left h3{
+        font-size: 80px;
+    }
+    .farmcarousel__left{
+        left: 2em;
+    }   
+}
+@media screen and (min-width:992px) {
+    .contact__flex .col-lg-6:last-of-type{
+    
+        flex: 0 0 41.66667%;
+        margin-left: 8.33333%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .title h2{
+        font-size: 32px !important;
+        line-height: 42px !important;
+    }
+    .title h4{
+        font-size: 18px !important;
+    }
+    .header__content .navbar-brand, .header__item2 i, .header__end i{
+        color: #fff;
+    }
+    .cd-top--is-visible .navbar-brand{
+        color: #fb811e;
+    }
+    .farmcarousel__left{
+        
+        left: 0em;
+        padding: 2em;
+       
+    }
+    .farmcarousel__left h3{
+        left: 0;
+        top: -0.3em;
+    }
+    .farmcarousel__item{
+        background: #fff;
+        padding: 3em 2em 2em 4em;
+        border-radius: 8px;
+    }
+    .Naturally{
+        padding: 3rem 0 !important;
+    }
+    .food{
+        padding: 3rem 0;
+    }
+    .food__bottom .row .food__flex{
+        margin-left: 0;
+       }
+       .contact__box{
+        left: -50px;
+    }
+    .contact{
+        padding: 3rem 0;
+      }
+      .contact__content2{
+        padding-top: 1.5rem ;
+    }
+    .banner__right {
+        text-align: center;
+    }
+    footer{
+        padding: 1.5rem 0;
+    }
+}
+@media screen and (max-width:567px) {
+    .title h2{
+        font-size: 30px !important;
+        line-height: 40px !important;
+    }
+    .farmcarousel__left h3{
+        font-size: 70px;
+    }
+    .food .title{
+        padding-bottom: 1.5rem;
+        margin-bottom: 0rem;
+    }
+}
+@media screen and (max-width:450px){
+    .contact__item4{
+        grid-column: 1 / span 2;
+    }
+}
+@media (min-width: 576px){
+    .footer__form .form-inline .form--footer {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+    }
+ }
