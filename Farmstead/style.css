@@ -56,8 +56,9 @@ body h1,body h2,body h3,body h4,body h5{
    margin-bottom: 1.5rem;
    display: inline-block; 
    transition: all 0.3s ease-in;
+   
 }
-.btn__color:hover a{
+.btn__color a:hover{
     background: #009f4d;
 }
 
