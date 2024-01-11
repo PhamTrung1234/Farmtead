@@ -749,6 +749,18 @@ body.dark{
     background: #222222;
     color:#b7b7b7;
 }
+body.dark .header__nav{
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+}
+body.dark #navbarSupportedContent .navbar-nav{
+    background: #222222;
+}
+body.dark #navbarSupportedContent .nav-item .nav-link{
+    color: #fff;
+}
+body.dark #navbarSupportedContent .active .nav-link{
+    color: #fb811e;
+}
 body.dark header.cd-top--is-visible{
     background-color: #222222;
 }
@@ -807,6 +819,10 @@ body.dark footer h3{
 }
 body.dark footer .footer__item a{
     color: #b7b7b7;
+    transition: 0.5s;
+}
+body.dark footer .footer__item a:hover{
+    color: #fb811e;
 }
 body.dark .footer__form input{
     background: #0b0d0e;
