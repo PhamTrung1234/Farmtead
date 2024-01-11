@@ -39,6 +39,7 @@ body h1,body h2,body h3,body h4,body h5{
     line-height: 26px;
     color: #707070;
     margin-bottom: 1.5rem;
+    font-size: 17px;
 }
 
 
@@ -115,21 +116,28 @@ header{
     outline: none;
     background: none;
     font-size: 1em;
+    padding-right: 0;
 }
 .header__nav{
     position: absolute;
     top: 120%;
-    right: 0;
+    right: 0px;
     min-width: 8em;
-    z-index: 3;
-    transition: all 0.5s ease-in;
+    z-index: 20;
+    
+    
+    
+    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    transition: 0.5s ease-in-out;
+    
 }
+
 #navbarSupportedContent .navbar-nav{
     overflow: hidden;
     padding: 0;
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 20px 62px rgba(4, 20, 69, .1);
+    
     
 }
 #navbarSupportedContent .nav-item .nav-link{
@@ -253,6 +261,7 @@ header{
     top: 0;
     left: 0;
     z-index: 2;
+    border-radius: 0 0 0 20px;
 }
 #carouselExampleCaptions .carousel-inner .carousel-item>img{
     height: 100vh;
@@ -267,10 +276,14 @@ header{
 #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption span{
     font-size: 1.25rem;
 }
+#carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p{
+    font-size: 17px;
+}   
 /* Naturally  */
 .Naturally{
     padding: 6rem 0 !important;
 }
+
 .nat__right{
     text-align: center;
     gap: 20px 0;
@@ -292,6 +305,7 @@ header{
     border-radius: 30px;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 3%);
     background-color: #fff;
+    height: 100%;
 }
 .nat__item:hover{
     transition: 0.3s;
@@ -624,6 +638,9 @@ footer{
     position: relative;
     transition: 0.5s ease-in-out;
     display: inline-block;
+    border: none;
+    outline: none;
+    
 }
 .logo h2{
     font-size: 32px;
@@ -799,6 +816,13 @@ body.dark .footer__form input{
 
 
 /* Responsive  */
+@media screen and (max-width: 1200px)
+ {  #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption p{
+    line-height: 26px;
+
+ }
+    
+}
 @media screen and (max-width: 1190px)
  {  .footer__content h3{
     font-size: 16px;}
@@ -858,7 +882,7 @@ body.dark .footer__form input{
         margin-left: 8.33333%;
     }
     header .header__content{
-        margin: 0 -30px;
+        margin: 0 -31px;
      }
     .Naturally .Naturally__content{
         margin: 0 -15px;
