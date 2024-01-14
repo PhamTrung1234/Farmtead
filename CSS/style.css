@@ -994,8 +994,13 @@ body.dark .footer__form input{
 @media screen and (max-width:480px) {
     .farmcarousel__item {
        
-        padding: 2.5em 2em 2em 2.5em;
-       
+        padding: 2.5em 2em 0em 2.5em;
+    }
+    .farmcarousel__right .carousel-inner .carousel-caption{
+        padding-bottom: 0;
+    }
+    .farmcarousel__right .carousel-inner .carousel-caption h5{
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width:450px){
